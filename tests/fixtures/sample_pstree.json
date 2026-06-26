@@ -1,0 +1,20 @@
+[
+  {"PID": "4",    "PPID": "0",    "ImageFileName": "System",         "Offset": "0xfa8000ca0040", "Threads": "115", "Handles": "786",  "CreateTime": "2024-11-14 08:00:01", "Audit": ""},
+  {"PID": "364",  "PPID": "4",    "ImageFileName": ". smss.exe",     "Offset": "0xfa8001190040", "Threads": "3",   "Handles": "32",   "CreateTime": "2024-11-14 08:00:01", "Audit": ""},
+  {"PID": "528",  "PPID": "364",  "ImageFileName": ". . csrss.exe",  "Offset": "0xfa8001490040", "Threads": "12",  "Handles": "412",  "CreateTime": "2024-11-14 08:00:04", "Audit": ""},
+  {"PID": "576",  "PPID": "364",  "ImageFileName": ". . winlogon.exe","Offset": "0xfa80014c0040","Threads": "5",   "Handles": "128",  "CreateTime": "2024-11-14 08:00:04", "Audit": ""},
+  {"PID": "532",  "PPID": "364",  "ImageFileName": ". . wininit.exe","Offset": "0xfa8001500040", "Threads": "3",   "Handles": "92",   "CreateTime": "2024-11-14 08:00:04", "Audit": ""},
+  {"PID": "664",  "PPID": "532",  "ImageFileName": ". . . lsass.exe","Offset": "0xfa8001530040", "Threads": "22",  "Handles": "1043", "CreateTime": "2024-11-14 08:00:06", "Audit": ""},
+  {"PID": "692",  "PPID": "532",  "ImageFileName": ". . . services.exe","Offset": "0xfa8001540040","Threads": "8", "Handles": "248",  "CreateTime": "2024-11-14 08:00:06", "Audit": ""},
+  {"PID": "788",  "PPID": "692",  "ImageFileName": ". . . . svchost.exe","Offset": "0xfa8001620040","Threads": "18","Handles": "432", "CreateTime": "2024-11-14 08:00:08", "Audit": ""},
+  {"PID": "3800", "PPID": "692",  "ImageFileName": ". . . . MsMpEng.exe","Offset": "0xfa8003480040","Threads": "19","Handles": "512", "CreateTime": "2024-11-14 08:14:30", "Audit": ""},
+  {"PID": "3420", "PPID": "576",  "ImageFileName": ". . . explorer.exe","Offset": "0xfa8003120040","Threads": "41","Handles": "1287","CreateTime": "2024-11-14 08:14:22", "Audit": ""},
+  {"PID": "4832", "PPID": "3420", "ImageFileName": ". . . . EXCEL.EXE","Offset": "0xfa8004832040","Threads": "28","Handles": "854",  "CreateTime": "2024-11-14 09:31:04", "Audit": "SUSPICIOUS"},
+  {"PID": "5108", "PPID": "4832", "ImageFileName": ". . . . . cmd.exe","Offset": "0xfa8005108040","Threads": "2", "Handles": "68",   "CreateTime": "2024-11-14 09:31:09", "Audit": "SUSPICIOUS - Office spawning shell"},
+  {"PID": "5244", "PPID": "5108", "ImageFileName": ". . . . . . powershell.exe","Offset": "0xfa8005244040","Threads": "14","Handles": "394","CreateTime": "2024-11-14 09:31:11","Audit": "MALICIOUS - encoded download"},
+  {"PID": "5512", "PPID": "5244", "ImageFileName": ". . . . . . . certutil.exe","Offset": "0xfa8005512040","Threads": "2","Handles": "44", "CreateTime": "2024-11-14 09:31:18", "Audit": "MALICIOUS - LOLBin downloader"},
+  {"PID": "6812", "PPID": "5108", "ImageFileName": ". . . . . svchost.exe","Offset": "0xfa8006812040","Threads": "6","Handles": "183", "CreateTime": "2024-11-14 09:31:28", "Audit": "MALICIOUS - fake svchost C2 agent"},
+  {"PID": "7040", "PPID": "6812", "ImageFileName": ". . . . . . whoami.exe","Offset": "0xfa8007040040","Threads": "1","Handles": "28",  "CreateTime": "2024-11-14 09:32:01", "Audit": "RECON"},
+  {"PID": "7204", "PPID": "6812", "ImageFileName": ". . . . . . net.exe","Offset": "0xfa8007204040","Threads": "1","Handles": "30",   "CreateTime": "2024-11-14 09:32:05", "Audit": "RECON - domain enumeration"},
+  {"PID": "7388", "PPID": "6812", "ImageFileName": ". . . . . . nltest.exe","Offset": "0xfa8007388040","Threads": "1","Handles": "28", "CreateTime": "2024-11-14 09:32:11", "Audit": "RECON - DC discovery"}
+]

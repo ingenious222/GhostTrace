@@ -1,0 +1,44 @@
+[
+  {
+    "pid": "3420", "process": "explorer.exe",
+    "address": "0x000000007ffe0000", "vad_tag": "VadS",
+    "protection": "PAGE_EXECUTE_READ_WRITE",
+    "hex_preview": "4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00",
+    "disasm": "0x7ffe0000: MZ header - PE in non-image VAD - shellcode loader"
+  },
+  {
+    "pid": "3420", "process": "explorer.exe",
+    "address": "0x000000001a3f0000", "vad_tag": "VadS",
+    "protection": "PAGE_EXECUTE_READWRITE",
+    "hex_preview": "FC 48 83 E4 F0 E8 C0 00 00 00 41 51 41 50 52 51",
+    "disasm": "0x1a3f0000: sub rsp,0x28 - Cobalt Strike Beacon shellcode stub"
+  },
+  {
+    "pid": "664", "process": "lsass.exe",
+    "address": "0x000000002c800000", "vad_tag": "VadS",
+    "protection": "PAGE_EXECUTE_READ_WRITE",
+    "hex_preview": "48 8B C4 48 89 58 08 48 89 68 10 48 89 70 18 57",
+    "disasm": "0x2c800000: Injected credential-dumper code in LSASS - Mimikatz signature"
+  },
+  {
+    "pid": "664", "process": "lsass.exe",
+    "address": "0x000000002ca00000", "vad_tag": "VadS",
+    "protection": "PAGE_EXECUTE_READWRITE",
+    "hex_preview": "60 89 E5 31 D2 64 8B 52 30 8B 52 0C 8B 52 14 8B",
+    "disasm": "0x2ca00000: Classic shellcode prolog - PEB traversal technique (T1055)"
+  },
+  {
+    "pid": "5244", "process": "powershell.exe",
+    "address": "0x000000003b100000", "vad_tag": "VadS",
+    "protection": "PAGE_EXECUTE_READ_WRITE",
+    "hex_preview": "E8 00 00 00 00 5B 81 EB 05 10 40 00 8D 83 5C 10",
+    "disasm": "0x3b100000: Reflective DLL loader - self-locating stub used by Cobalt Strike"
+  },
+  {
+    "pid": "6812", "process": "svchost.exe",
+    "address": "0x000000004d200000", "vad_tag": "VadS",
+    "protection": "PAGE_EXECUTE_READWRITE",
+    "hex_preview": "4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00",
+    "disasm": "0x4d200000: PE loaded in private memory - C2 beacon DLL not on disk"
+  }
+]

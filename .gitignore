@@ -1,0 +1,64 @@
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+
+# ── Virtual environment ───────────────────────────────────────────────────────
+env/
+venv/
+.venv/
+
+# ── Memory dumps (all except MAXIMUM.dmp) ────────────────────────────────────
+Challenge/
+FINTECH_CORP_APT41_Nov14_2024.dmp
+*.raw
+*.mem
+*.vmem
+
+# ── Generated output (runtime) ────────────────────────────────────────────────
+output/
+volatility/cache/
+volatility/symbols/
+
+# ── Database ──────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+output/scans.db
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+
+# ── Test / scratch / dev-only files ──────────────────────────────────────────
+test_models.py
+test_openrouter.py
+test_results.txt
+pipeline_test.py
+test_longcat.py
+rum-test-data.txt
+mem.txt
+webs-test-challenge.png
+check_health.py
+generate_fake_dump.py
+generate_max_threat_dump.py
+gui/scan_db.py
+tests/score_check.py
+
+# ── Markdown scenario / investigation guides (internal) ──────────────────────
+INVESTIGATION_GUIDE.md
+PHANTOM_LEDGER_SCENARIO.md
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+
+# Oversized dump (1 GB - exceeds GitHub 100 MB limit)
+MAXIMUM.dmp
+
+# CI workflow (requires workflow token scope)
+.github/

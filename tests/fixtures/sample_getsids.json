@@ -1,0 +1,9 @@
+[
+  {"PID": "6812", "Process": "svchost.exe", "SID": "S-1-5-21-3847294832-1699987939-825301492-1103", "Name": "FINTECH-CORP\\jsmith",        "Groups": "Domain Users, Remote Desktop Users"},
+  {"PID": "6812", "Process": "svchost.exe", "SID": "S-1-5-32-544",                                  "Name": "BUILTIN\\Administrators",      "Groups": "High integrity - ELEVATED"},
+  {"PID": "5244", "Process": "powershell.exe","SID":"S-1-5-21-3847294832-1699987939-825301492-1103","Name": "FINTECH-CORP\\jsmith",         "Groups": "Domain Users"},
+  {"PID": "5108", "Process": "cmd.exe",      "SID": "S-1-5-21-3847294832-1699987939-825301492-1103","Name": "FINTECH-CORP\\jsmith",         "Groups": "Domain Users"},
+  {"PID": "4832", "Process": "EXCEL.EXE",   "SID": "S-1-5-21-3847294832-1699987939-825301492-1103", "Name": "FINTECH-CORP\\jsmith",         "Groups": "Domain Users, Finance-Team"},
+  {"PID": "664",  "Process": "lsass.exe",   "SID": "S-1-5-18",                                      "Name": "NT AUTHORITY\\SYSTEM",         "Groups": "SYSTEM - highest privilege"},
+  {"PID": "3420", "Process": "explorer.exe","SID": "S-1-5-21-3847294832-1699987939-825301492-1103",  "Name": "FINTECH-CORP\\jsmith",         "Groups": "Domain Users"}
+]

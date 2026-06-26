@@ -1,0 +1,15 @@
+[
+  {"PID": "6812", "Process": "svchost.exe", "Base": "0x4d200000", "Size": "0x2e000",  "LoadCount": "1", "Path": "C:\\Windows\\Temp\\msupdate32.dll",         "LoadTime": "2024-11-14 09:31:29"},
+  {"PID": "6812", "Process": "svchost.exe", "Base": "0x74800000", "Size": "0x4c000",  "LoadCount": "1", "Path": "C:\\Windows\\Temp\\winsvc64.dll",            "LoadTime": "2024-11-14 09:31:29"},
+  {"PID": "6812", "Process": "svchost.exe", "Base": "0x75200000", "Size": "0x12000",  "LoadCount": "1", "Path": "C:\\Users\\jsmith\\AppData\\Local\\Temp\\~DF3A.tmp", "LoadTime": "2024-11-14 09:31:30"},
+  {"PID": "6812", "Process": "svchost.exe", "Base": "0x76100000", "Size": "0x8000",   "LoadCount": "1", "Path": "C:\\Users\\jsmith\\AppData\\Roaming\\beacon.dll","LoadTime": "2024-11-14 09:31:31"},
+  {"PID": "5244", "Process": "powershell.exe","Base": "0x3b100000","Size": "0x18000", "LoadCount": "1", "Path": "C:\\Windows\\Temp\\clrjit32.dll",              "LoadTime": "2024-11-14 09:31:14"},
+  {"PID": "5244", "Process": "powershell.exe","Base": "0x3c000000","Size": "0x9000",  "LoadCount": "1", "Path": "C:\\Users\\jsmith\\AppData\\Local\\Temp\\amsi_patch.dll","LoadTime": "2024-11-14 09:31:15"},
+  {"PID": "3420", "Process": "explorer.exe", "Base": "0x7ffe0000", "Size": "0x9000",  "LoadCount": "1", "Path": "C:\\Windows\\Temp\\shell_hook.dll",            "LoadTime": "2024-11-14 09:31:32"},
+  {"PID": "3420", "Process": "explorer.exe", "Base": "0x7f000000", "Size": "0x5000",  "LoadCount": "1", "Path": "C:\\ProgramData\\WindowsUpdate\\update.dll",   "LoadTime": "2024-11-14 09:31:33"},
+  {"PID": "664",  "Process": "lsass.exe",    "Base": "0x2c800000", "Size": "0x22000", "LoadCount": "1", "Path": "C:\\Windows\\Temp\\sekurlsa32.dll",            "LoadTime": "2024-11-14 09:38:04"},
+  {"PID": "664",  "Process": "lsass.exe",    "Base": "0x2ca00000", "Size": "0x11000", "LoadCount": "1", "Path": "C:\\Users\\Public\\Documents\\wce.dll",        "LoadTime": "2024-11-14 09:38:05"},
+  {"PID": "4832", "Process": "EXCEL.EXE",    "Base": "0x6ea00000", "Size": "0x8000",  "LoadCount": "1", "Path": "C:\\Windows\\Temp\\xlm_macro_runner.dll",     "LoadTime": "2024-11-14 09:31:05"},
+  {"PID": "4832", "Process": "EXCEL.EXE",    "Base": "0x6eb00000", "Size": "0x4000",  "LoadCount": "1", "Path": "C:\\Users\\jsmith\\Downloads\\evil_addin.dll", "LoadTime": "2024-11-14 09:31:06"},
+  {"PID": "77a0", "Process": "svchost.exe",  "Base": "0x77a00000", "Size": "0x180000","LoadCount": "65535","Path": "C:\\Windows\\System32\\ntdll.dll",           "LoadTime": "2024-11-14 08:00:08"}
+]

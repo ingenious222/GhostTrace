@@ -1,0 +1,14 @@
+[
+  {"Offset":"0xfa8006812040","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"49832","ForeignAddr":"185.234.218.45","ForeignPort":"443","State":"ESTABLISHED","PID":"6812","Owner":"svchost.exe","Created":"2024-11-14 09:31:30"},
+  {"Offset":"0xfa8006812080","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"49901","ForeignAddr":"91.92.254.185","ForeignPort":"4444","State":"ESTABLISHED","PID":"6812","Owner":"svchost.exe","Created":"2024-11-14 09:32:44"},
+  {"Offset":"0xfa8006812100","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"50011","ForeignAddr":"185.220.101.47","ForeignPort":"31337","State":"ESTABLISHED","PID":"6812","Owner":"svchost.exe","Created":"2024-11-14 09:44:12"},
+  {"Offset":"0xfa8005244040","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"49710","ForeignAddr":"185.234.218.45","ForeignPort":"80","State":"ESTABLISHED","PID":"5244","Owner":"powershell.exe","Created":"2024-11-14 09:31:12"},
+  {"Offset":"0xfa8003420040","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"49650","ForeignAddr":"91.92.254.185","ForeignPort":"8443","State":"ESTABLISHED","PID":"3420","Owner":"explorer.exe","Created":"2024-11-14 09:15:03"},
+  {"Offset":"0xfa8000calc040","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"51000","ForeignAddr":"185.234.218.45","ForeignPort":"4444","State":"ESTABLISHED","PID":"9012","Owner":"calc.exe","Created":"2024-11-14 09:38:10"},
+  {"Offset":"0xfa8000note040","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"51001","ForeignAddr":"91.92.254.185","ForeignPort":"1234","State":"ESTABLISHED","PID":"9013","Owner":"notepad.exe","Created":"2024-11-14 09:38:15"},
+  {"Offset":"0xfa8000regx040","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"51002","ForeignAddr":"185.220.101.47","ForeignPort":"31337","State":"ESTABLISHED","PID":"9014","Owner":"regedit.exe","Created":"2024-11-14 09:38:20"},
+  {"Offset":"0xfa8000mspn040","Proto":"TCPv4","LocalAddr":"10.0.1.45","LocalPort":"51003","ForeignAddr":"185.234.218.45","ForeignPort":"5555","State":"ESTABLISHED","PID":"9015","Owner":"mspaint.exe","Created":"2024-11-14 09:38:25"},
+  {"Offset":"0xfa8001248040","Proto":"TCPv4","LocalAddr":"0.0.0.0","LocalPort":"445","ForeignAddr":"0.0.0.0","ForeignPort":"0","State":"LISTENING","PID":"4","Owner":"System","Created":"2024-11-14 08:00:01"},
+  {"Offset":"0xfa8001124040","Proto":"TCPv6","LocalAddr":"::","LocalPort":"135","ForeignAddr":"::","ForeignPort":"0","State":"LISTENING","PID":"860","Owner":"svchost.exe","Created":"2024-11-14 08:00:09"},
+  {"Offset":"0xfa8006812200","Proto":"UDPv4","LocalAddr":"10.0.1.45","LocalPort":"53","ForeignAddr":"*","ForeignPort":"*","State":"","PID":"6812","Owner":"svchost.exe","Created":"2024-11-14 09:33:01"}
+]

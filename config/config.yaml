@@ -1,0 +1,49 @@
+# GhostTrace — Configuration
+
+# --- Volatility Settings ---
+volatility:
+  path: ""                     # Override via VOLATILITY_PATH env var
+  version: "vol3"              # "vol3" or "vol2"
+  timeout: 120                 # seconds before plugin run times out
+  plugins:
+    - windows.pslist
+    - windows.pstree
+    - windows.malfind
+    - windows.netscan
+    - windows.dlllist
+    - windows.cmdline
+    - windows.handles
+
+# --- LLM Agent Settings ---
+agent:
+  max_iterations: 20           # max tool-call loops before forcing final answer
+  temperature: 0.1             # low temp for deterministic forensic reasoning
+  provider: "openai"           # "openai" | "ollama"
+  model: "gpt-4o"             # OpenAI model or Ollama model name
+
+# --- Threat Scoring Weights (must sum to 100) ---
+scoring:
+  weights:
+    malfind_injections: 30
+    encoded_powershell: 20
+    orphan_processes: 20
+    suspicious_network: 15
+    dll_anomalies: 10
+    handle_anomalies: 5
+  thresholds:
+    low: 30
+    medium: 65
+    high: 90
+    critical: 90
+
+# --- Reporting ---
+reporting:
+  output_dir: "./output"
+  formats:
+    - pdf                      # mandatory
+    - json
+    - html
+
+# --- Logging ---
+logging:
+  level: "INFO"                # DEBUG | INFO | WARNING | ERROR
