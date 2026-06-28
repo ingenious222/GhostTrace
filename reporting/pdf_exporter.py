@@ -363,12 +363,12 @@ def _export_reportlab(output_path: str, ctx: dict[str, Any]) -> dict[str, Any]:
         [meta_t],
         [Spacer(1, 8 * mm)],
         [Paragraph(
-            "Developed by: Rumaisa Muneeb  ·  Supervisor: [Supervisor Name]",
+            "GhostTrace v2.0 — Memory Forensics & Threat Intelligence",
             _s("CovDev", fontSize=8, textColor=PINK_LIGHT,
                alignment=TA_CENTER, leading=12),
         )],
         [Paragraph(
-            "Department of Computer Science  ·  Digital Forensics &amp; Cybersecurity  ·  FYP 2026",
+            "Digital Forensics & Cybersecurity",
             _s("CovFoot", fontSize=7, textColor=colors.HexColor("#7c3aed"),
                alignment=TA_CENTER, leading=11),
         )],
