@@ -398,25 +398,49 @@ with st.sidebar:
 
     # Dump file
     st.markdown("### 🗂 Memory Dump")
+
+    if "recent_dumps" not in st.session_state:
+        st.session_state["recent_dumps"] = []
+
     dump_input = st.text_input(
-        "Path to dump",
+        "Full path to .dmp / .raw / .mem",
         value=st.session_state.dump_path,
-        placeholder="C:\\path\\to\\dump.dmp",
+        placeholder="C:\\Users\\you\\challenge.dmp",
         key="dump_input_sidebar",
+        help="Paste the full path to your memory image",
     )
-    if dump_input != st.session_state.dump_path:
-        st.session_state.dump_path = dump_input
-        st.session_state.plugin_outputs = {}
-        st.session_state.flags_found = []
+
+    _dp_clean = dump_input.strip().strip('"').strip("'")
+
+    if st.button("✅ Load Dump", use_container_width=True, key="load_dump_btn", type="primary"):
+        if _dp_clean:
+            st.session_state.dump_path      = _dp_clean
+            st.session_state.plugin_outputs = {}
+            st.session_state.flags_found    = []
+            if _dp_clean not in st.session_state.recent_dumps:
+                st.session_state.recent_dumps.insert(0, _dp_clean)
+                st.session_state.recent_dumps = st.session_state.recent_dumps[:5]
         st.rerun()
 
+    # Recent dumps quick-picker
+    if st.session_state.recent_dumps:
+        with st.expander("📂 Recent dumps", expanded=False):
+            for _rd in st.session_state.recent_dumps:
+                _rname = os.path.basename(_rd)
+                if st.button(f"📄 {_rname}", key=f"rd_{abs(hash(_rd))}", use_container_width=True):
+                    st.session_state.dump_path      = _rd
+                    st.session_state.plugin_outputs = {}
+                    st.session_state.flags_found    = []
+                    st.rerun()
+
     if st.session_state.dump_path and os.path.exists(st.session_state.dump_path):
-        sz = os.path.getsize(st.session_state.dump_path) / (1024**3)
-        st.success(f"✅ Loaded — {sz:.2f} GB")
+        _fn = os.path.basename(st.session_state.dump_path)
+        sz  = os.path.getsize(st.session_state.dump_path) / (1024**3)
+        st.success(f"✅ {_fn}  ({sz:.2f} GB)")
         sha = hashlib.md5(open(st.session_state.dump_path, "rb").read(65536)).hexdigest()
-        st.caption(f"MD5 (first 64K): `{sha}`")
+        st.caption(f"MD5 (first 64 KB): `{sha}`")
     elif st.session_state.dump_path:
-        st.error("❌ File not found")
+        st.error("❌ File not found — check the path")
 
     st.divider()
 
